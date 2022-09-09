@@ -15,12 +15,14 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/light_blue_900"
             app:popupTheme="@style/Theme.Dolores.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include
+        layout="@layout/content_main"
+        android:layout_height="683dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -29,6 +31,10 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:backgroundTint="@color/light_blue_900"
+        android:hapticFeedbackEnabled="true"
+        android:tint="#000000"
+        app:rippleColor="@color/black"
+        app:srcCompat="@android:drawable/ic_menu_today" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
