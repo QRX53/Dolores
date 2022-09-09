@@ -22,6 +22,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.dolores.R;
+import com.example.dolores.bosque.Information;
 import com.example.dolores.databinding.FragmentLoginBinding;
 
 public class LoginFragment extends Fragment {
@@ -126,11 +127,32 @@ public class LoginFragment extends Fragment {
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
-        String welcome = "Welcome " + binding.editStudentId.toString();
-        // TODO : initiate successful logged in experience
+
+        if (binding.editStudentId.getText().toString().length() < 4) {
+            try {
+                throw new Exception();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        String welcome;
+        String id = binding.editStudentId.getText().toString();
+
+        String studentName = Information.studentIds.get(id);
+
+        welcome = "Welcome to Dolores, " + studentName;
+
+        if (!Information.studentIds.containsKey(id)) {
+            welcome = "You can't hide your name from me forever, you know...";
+        } else {
+            Information.currentStudentName = studentName;
+        }
+
         if (getContext() != null && getContext().getApplicationContext() != null) {
             Toast.makeText(getContext().getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
         }
+
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {

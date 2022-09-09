@@ -2,9 +2,14 @@ package com.example.dolores;
 
 import android.os.Bundle;
 import android.view.DragEvent;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -38,13 +43,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Drag to quick-peek at your schedule!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-            }
-        });
-        binding.fab.setOnDragListener(new View.OnDragListener() {
-            @Override
-            public boolean onDrag(View view, DragEvent dragEvent) {
-                System.out.println("balls and shit");
-                return false;
             }
         });
     }

@@ -11,11 +11,17 @@
         <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/app/src/main/res/layout/fragment_second.xml" value="0.21784420289855072" />
         <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/app/src/main/res/menu/menu_main.xml" value="0.3494791666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2006340579710145" />
+        <entry key="app/src/main/res/layout/activity_student_hub.xml" value="0.2006340579710145" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.2006340579710145" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_s_ign_up.xml" value="0.2006340579710145" />
+        <entry key="app/src/main/res/layout/fragment_scrolling.xml" value="0.2006340579710145" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.182518115942029" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.182518115942029" />
+        <entry key="app/src/main/res/layout/fragment_student_hub.xml" value="0.2006340579710145" />
+        <entry key="app/src/main/res/layout/fragment_student_hub_list_dialog.xml" value="0.2006340579710145" />
+        <entry key="app/src/main/res/layout/fragment_student_hub_list_dialog_item.xml" value="0.2006340579710145" />
+        <entry key="app/src/main/res/layout/popup_window.xml" value="0.2006340579710145" />
       </map>
     </option>
   </component>

@@ -52,10 +52,12 @@
         android:layout_marginTop="75dp"
         android:layout_marginEnd="130dp"
         android:layout_marginBottom="530dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        tools:src="@tools:sample/avatars"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
