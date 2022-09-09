@@ -24,10 +24,18 @@
         <action
             android:id="@+id/action_SecondFragment_to_LoginFragment"
             app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_SignUpFragment"
+            app:destination="@id/SignUpFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/LoginFragment"
         android:name="com.example.dolores.ui.login.LoginFragment"
+        tools:layout="@layout/activity_main" />
+
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.example.dolores.ui.login.SIgnUpFragment"
         tools:layout="@layout/activity_main" />
 </navigation>

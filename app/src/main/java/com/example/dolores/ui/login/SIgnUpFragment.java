@@ -22,12 +22,12 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.dolores.R;
-import com.example.dolores.databinding.FragmentLoginBinding;
+import com.example.dolores.databinding.FragmentSIgnUpBinding;
 
-public class LoginFragment extends Fragment {
+public class SIgnUpFragment extends Fragment {
 
     private LoginViewModel loginViewModel;
-    private FragmentLoginBinding binding;
+    private FragmentSIgnUpBinding binding;
 
     @Nullable
     @Override
@@ -35,7 +35,7 @@ public class LoginFragment extends Fragment {
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        binding = FragmentLoginBinding.inflate(inflater, container, false);
+        binding = FragmentSIgnUpBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
@@ -50,7 +50,6 @@ public class LoginFragment extends Fragment {
         final EditText passwordEditText = binding.password;
         final Button loginButton = binding.login;
         final ProgressBar loadingProgressBar = binding.loading;
-        final EditText userid = binding.editStudentId;
 
         loginViewModel.getLoginFormState().observe(getViewLifecycleOwner(), new Observer<LoginFormState>() {
             @Override
@@ -126,7 +125,7 @@ public class LoginFragment extends Fragment {
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
-        String welcome = "Welcome " + binding.editStudentId.toString();
+        String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
         if (getContext() != null && getContext().getApplicationContext() != null) {
             Toast.makeText(getContext().getApplicationContext(), welcome, Toast.LENGTH_LONG).show();

@@ -10,8 +10,10 @@
         <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/Dolores/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2005" />
         <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/app/src/main/res/layout/fragment_second.xml" value="0.21784420289855072" />
         <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/app/src/main/res/menu/menu_main.xml" value="0.3494791666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2006340579710145" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.2006340579710145" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_s_ign_up.xml" value="0.2006340579710145" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.182518115942029" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.182518115942029" />
       </map>
