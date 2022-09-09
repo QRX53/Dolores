@@ -20,8 +20,10 @@ import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.dolores.R;
+import com.example.dolores.SecondFragment;
 import com.example.dolores.bosque.Information;
 import com.example.dolores.databinding.FragmentLoginBinding;
 
@@ -81,6 +83,8 @@ public class LoginFragment extends Fragment {
                 }
                 if (loginResult.getSuccess() != null) {
                     updateUiWithUser(loginResult.getSuccess());
+                    binding.login.setOnClickListener(view1 -> NavHostFragment.findNavController(LoginFragment.this)
+                            .navigate(R.id.action_LoginFragment_to_StudentHubActivity));
                 }
             }
         });

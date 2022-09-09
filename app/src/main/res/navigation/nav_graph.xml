@@ -32,10 +32,24 @@
     <fragment
         android:id="@+id/LoginFragment"
         android:name="com.example.dolores.ui.login.LoginFragment"
-        tools:layout="@layout/activity_main" />
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_LoginFragment_to_StudentHubActivity"
+            app:destination="@id/StudentHubActivity" />
+    </fragment>
 
     <fragment
         android:id="@+id/SignUpFragment"
         android:name="com.example.dolores.ui.login.SIgnUpFragment"
-        tools:layout="@layout/activity_main" />
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_SignUpFragment_to_StudentHubActivity"
+            app:destination="@id/StudentHubActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/StudentHubActivity"
+        android:name="com.example.dolores.StudentHubActivity"
+        tools:layout="@layout/activity_student_hub"/>
+
 </navigation>

@@ -20,6 +20,7 @@ import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.dolores.R;
 import com.example.dolores.databinding.FragmentSIgnUpBinding;
@@ -79,6 +80,8 @@ public class SIgnUpFragment extends Fragment {
                 }
                 if (loginResult.getSuccess() != null) {
                     updateUiWithUser(loginResult.getSuccess());
+                    binding.login.setOnClickListener(view1 -> NavHostFragment.findNavController(SIgnUpFragment.this)
+                            .navigate(R.id.action_SignUpFragment_to_StudentHubActivity));
                 }
             }
         });
