@@ -17,6 +17,11 @@ public class Data {
         return "\n\t\t\t" + lunch;
     }
 
+    public static String getLunch(String day) {
+        String lunch = "taco";
+        return "\n\t\t\t" + lunch;
+    }
+
     public static String getNextClass() {
         //TODO:
         // return next class from database

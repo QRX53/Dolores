@@ -32,7 +32,9 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        this.binding.textView3.setText("Today's lunch is: " + Data.getLunch());
+        String day = String.valueOf(binding.calendarView.getDate());
+
+        this.binding.textView3.setText("Today's lunch is: " + Data.getLunch(day));
 
         this.binding.button.setOnClickListener(view1 -> NavHostFragment.findNavController(SecondFragment.this)
                 .navigate(R.id.action_SecondFragment_to_LoginFragment));
