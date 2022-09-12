@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.dolores.bosque.Data;
 import com.example.dolores.databinding.FragmentSecondBinding;
 
 public class SecondFragment extends Fragment implements View.OnClickListener {
@@ -27,8 +28,11 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
 
     }
 
+    @SuppressLint("SetTextI18n")
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        this.binding.textView3.setText("Today's lunch is: " + Data.getLunch());
 
         this.binding.button.setOnClickListener(view1 -> NavHostFragment.findNavController(SecondFragment.this)
                 .navigate(R.id.action_SecondFragment_to_LoginFragment));

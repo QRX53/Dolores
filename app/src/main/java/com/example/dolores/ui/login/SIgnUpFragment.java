@@ -84,8 +84,6 @@ public class SIgnUpFragment extends Fragment {
                 }
                 if (loginResult.getSuccess() != null) {
                     updateUiWithUser(loginResult.getSuccess());
-                    binding.login.setOnClickListener(view1 -> NavHostFragment.findNavController(SIgnUpFragment.this)
-                            .navigate(R.id.action_SignUpFragment_to_StudentHubActivity));
                 }
             }
         });
@@ -137,9 +135,7 @@ public class SIgnUpFragment extends Fragment {
         String password = binding.password.getText().toString();
         String usermail = binding.username.getText().toString();
 
-        boolean x = com.example.dolores.bosque.Data.verifyLogin(usermail, password);
-
-        if (x) {
+        if (Data.verifyLogin(usermail, password)) {
             this.binding.login.setOnClickListener(view1 -> NavHostFragment.findNavController(SIgnUpFragment.this)
                     .navigate(R.id.action_SignUpFragment_to_StudentHubActivity));
             return;

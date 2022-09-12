@@ -12,6 +12,17 @@ public class Data {
         users.add(new User("bigblackballs", "1610", "miles.bellmore@bosquestudents.org", "miles.bellmore@bosquestudents.org"));
     }
 
+    public static String getLunch() {
+        String lunch = "taco";
+        return "\n\t\t\t" + lunch;
+    }
+
+    public static String getNextClass() {
+        //TODO:
+        // return next class from database
+        return "You have physics next at: 9:45";
+    }
+
     public static boolean verifyLogin(String user, String password) {
 
         // PLACEHOLDER CODE

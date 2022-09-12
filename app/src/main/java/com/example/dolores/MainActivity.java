@@ -17,6 +17,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.dolores.bosque.Data;
 import com.example.dolores.databinding.ActivityMainBinding;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Drag to quick-peek at your schedule!", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, Data.getNextClass(), Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });

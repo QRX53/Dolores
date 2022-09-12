@@ -82,8 +82,6 @@ public class LoginFragment extends Fragment {
                 }
                 if (loginResult.getSuccess() != null) {
                     updateUiWithUser(loginResult.getSuccess());
-                    binding.login.setOnClickListener(view1 -> NavHostFragment.findNavController(LoginFragment.this)
-                            .navigate(R.id.action_LoginFragment_to_StudentHubActivity));
                 }
             }
         });
