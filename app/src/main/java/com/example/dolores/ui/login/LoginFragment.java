@@ -53,7 +53,6 @@ public class LoginFragment extends Fragment {
         final EditText passwordEditText = binding.password;
         final Button loginButton = binding.login;
         final ProgressBar loadingProgressBar = binding.loading;
-        final EditText userid = binding.editStudentId;
 
         loginViewModel.getLoginFormState().observe(getViewLifecycleOwner(), new Observer<LoginFormState>() {
             @Override
@@ -133,15 +132,20 @@ public class LoginFragment extends Fragment {
     private void updateUiWithUser(LoggedInUserView model) {
 
         if (binding.editStudentId.getText().toString().length() < 4) {
-            try {
-                throw new Exception();
-            } catch (Exception e) {
-                e.printStackTrace();
+            if (getContext() != null && getContext().getApplicationContext() != null) {
+                Toast.makeText(
+                        getContext().getApplicationContext(),
+                        "Student IDs must be greater than 4 digits!",
+                        Toast.LENGTH_LONG).show();
             }
         }
 
         String welcome;
         String id = binding.editStudentId.getText().toString();
+        String password = binding.password.getText().toString();
+        String usermail = binding.username.getText().toString();
+
+        com.example.dolores.bosque.Data.verifyLogin(usermail, password);
 
         String studentName = Information.studentIds.get(id);
 

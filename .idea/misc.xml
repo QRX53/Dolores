@@ -8,7 +8,9 @@
         <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/Dolores/app/src/main/res/layout/fragment_dashboard.xml" value="0.3494791666666667" />
         <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/Dolores/app/src/main/res/layout/fragment_first.xml" value="0.25" />
         <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/Dolores/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/Dolores/app/src/main/res/layout/fragment_login.xml" value="0.3494791666666667" />
         <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/Dolores/app/src/main/res/layout/fragment_notifications.xml" value="0.3494791666666667" />
+        <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/Dolores/app/src/main/res/layout/fragment_s_ign_up.xml" value="0.3494791666666667" />
         <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/Dolores/app/src/main/res/layout/fragment_second.xml" value="0.33" />
         <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/Dolores/app/src/main/res/layout/fragment_sign_up.xml" value="0.33" />
         <entry key="..\:/Users/Bosque/AndroidStudioProjects/Dolores2/Dolores/app/src/main/res/layout/fragment_third.xml" value="0.33" />
@@ -21,6 +23,7 @@
         <entry key="..\:/Users/Bosque/Documents/GitHub/Dolores/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1735" />
         <entry key="..\:/Users/Bosque/Documents/GitHub/Dolores/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Bosque/Documents/GitHub/Dolores/app/src/main/res/layout/content_main.xml" value="0.33" />
+<<<<<<< HEAD
         <entry key="..\:/Users/Bosque/Documents/GitHub/Dolores/app/src/main/res/layout/fragment_dashboard.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/Bosque/Documents/GitHub/Dolores/app/src/main/res/layout/fragment_first.xml" value="0.28940217391304346" />
         <entry key="..\:/Users/Bosque/Documents/GitHub/Dolores/app/src/main/res/layout/fragment_home.xml" value="0.17831813576494426" />
@@ -29,6 +32,8 @@
         <entry key="..\:/Users/Bosque/Documents/GitHub/Dolores/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2712962962962963" />
         <entry key="..\:/Users/Bosque/Documents/GitHub/Dolores/app/src/main/res/menu/menu_main.xml" value="0.2712962962962963" />
         <entry key="..\:/Users/Bosque/Documents/GitHub/Dolores/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1735" />
+=======
+>>>>>>> 5e65cffd5540a5d40eed57dfbd7ec67410681cc1
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2006340579710145" />
         <entry key="app/src/main/res/layout/activity_student_hub.xml" value="0.2006340579710145" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.2006340579710145" />

@@ -2,6 +2,7 @@ package com.example.dolores.ui.login;
 
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.InputFilter;
 import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -23,6 +24,9 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.dolores.R;
+import com.example.dolores.SecondFragment;
+import com.example.dolores.bosque.Data;
+import com.example.dolores.bosque.Information;
 import com.example.dolores.databinding.FragmentSIgnUpBinding;
 
 public class SIgnUpFragment extends Fragment {
@@ -128,10 +132,29 @@ public class SIgnUpFragment extends Fragment {
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
-        String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
+
+        String password = binding.password.getText().toString();
+        String usermail = binding.username.getText().toString();
+
+        boolean x = com.example.dolores.bosque.Data.verifyLogin(usermail, password);
+
+        if (x) {
+            this.binding.login.setOnClickListener(view1 -> NavHostFragment.findNavController(SIgnUpFragment.this)
+                    .navigate(R.id.action_SignUpFragment_to_StudentHubActivity));
+            return;
+        } else {
+            if (getContext() != null && getContext().getApplicationContext() != null) {
+                Toast.makeText(
+                        getContext().getApplicationContext(),
+                        "Sign in failed! Password or e-mail incorrect",
+                        Toast.LENGTH_LONG).show();
+                return;
+            }
+        }
+
         if (getContext() != null && getContext().getApplicationContext() != null) {
-            Toast.makeText(getContext().getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
+            Toast.makeText(getContext().getApplicationContext(), "Welcome!", Toast.LENGTH_LONG).show();
         }
     }
 
