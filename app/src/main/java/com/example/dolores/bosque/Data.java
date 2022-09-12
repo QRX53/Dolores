@@ -23,6 +23,12 @@ public class Data {
         return "You have physics next at: 9:45";
     }
 
+    public static String getDay() {
+        //TODO:
+        //change this to be from a database
+        return "6";
+    }
+
     public static boolean verifyLogin(String user, String password) {
 
         // PLACEHOLDER CODE
