@@ -45,4 +45,5 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="currentdaycycle">Today is day:</string>
+    <string name="sign_in">SIGN IN</string>
 </resources>
