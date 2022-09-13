@@ -15,6 +15,18 @@
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/MaybeSettings"
+        android:name="com.example.dolores.MaybeSettings"
+        android:label="Hello"
+        tools:layout="@layout/fragment_maybe_settings">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.dolores.SecondFragment"
