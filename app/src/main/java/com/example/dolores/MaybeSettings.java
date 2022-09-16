@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.dolores.databinding.ActivityMainBinding;
 
@@ -39,7 +40,7 @@ public class MaybeSettings extends Fragment {
      * @return A new instance of fragment MaybeSettings.
      */
     // TODO: Rename and change types and number of parameters
-    public static MaybeSettings newInstance(String param1, String param2) {
+    public MaybeSettings newInstance(String param1, String param2) {
         MaybeSettings fragment = new MaybeSettings();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
@@ -55,6 +56,7 @@ public class MaybeSettings extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         binding = ActivityMainBinding.inflate(inflater, container, false);
+
         return binding.getRoot();
 
     }
@@ -62,8 +64,7 @@ public class MaybeSettings extends Fragment {
     @Override
     public void onViewCreated(View v, Bundle b) {
 
-
-
+        Button button = binding.
 
     }
 
