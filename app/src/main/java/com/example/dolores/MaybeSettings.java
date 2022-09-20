@@ -64,7 +64,6 @@ public class MaybeSettings extends Fragment {
     @Override
     public void onViewCreated(View v, Bundle b) {
 
-        Button button = binding.
 
     }
 

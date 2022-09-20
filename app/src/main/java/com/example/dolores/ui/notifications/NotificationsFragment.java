@@ -9,7 +9,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.example.dolores.R;
 import com.example.dolores.databinding.FragmentNotificationsBinding;
 
 public class NotificationsFragment extends Fragment {
@@ -26,8 +28,10 @@ public class NotificationsFragment extends Fragment {
 
         final TextView textView = binding.textNotifications;
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
         return root;
     }
+
 
     @Override
     public void onDestroyView() {

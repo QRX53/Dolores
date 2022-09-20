@@ -8,8 +8,12 @@ public class Data {
     public static List<User> users = new ArrayList<>();
 
     static {
-        users.add(new User("bigballs", "1629", "harry.harbuck-marlowe@bosquestudents.org", "harry.harbuck-marlowe@bosquestudents.org"));
+        users.add(new User("bigballs", "1629", "harryharbuck", "harry.harbuck-marlowe@bosquestudents.org"));
         users.add(new User("bigblackballs", "1610", "miles.bellmore@bosquestudents.org", "miles.bellmore@bosquestudents.org"));
+    }
+
+    public static boolean getNewNotifs() {
+        return false;
     }
 
     public static String getLunch() {
