@@ -1,4 +1,4 @@
-package com.example.dolores.bosque;
+package com.example.dolores.bosque.data;
 
 public class User {
 
@@ -7,12 +7,7 @@ public class User {
     private String username;
     private String email;
 
-    public User(String p, String id, String u, String e) {
-        this.password = p;
-        this.id = id;
-        this.username = u;
-        this.email = e;
-    }
+    public User() {}
 
     public String getPassword() {
         return password;

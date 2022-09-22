@@ -20,11 +20,9 @@ import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.dolores.R;
-import com.example.dolores.SecondFragment;
 import com.example.dolores.bosque.Information;
+import com.example.dolores.bosque.data.Data;
 import com.example.dolores.databinding.FragmentLoginBinding;
 
 public class LoginFragment extends Fragment {
@@ -142,8 +140,9 @@ public class LoginFragment extends Fragment {
         String id = binding.editStudentId.getText().toString();
         String password = binding.password.getText().toString();
         String usermail = binding.username.getText().toString();
+        String username = binding.usernameInputField.getText().toString();
 
-        com.example.dolores.bosque.Data.verifyLogin(usermail, password);
+
 
         String studentName = Information.studentIds.get(id);
 

@@ -11,7 +11,7 @@
     <string name="hello_first_fragment">Welcome to the all new Bosque experience. \n \t \t \t \t \t \t \t \t \t \t This is Dolores</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="prompt_email">Email</string>
+    <string name="prompt_email">Email:</string>
     <string name="prompt_password">Password</string>
     <string name="prompt_studentid">Student ID</string>
     <string name="action_sign_in">Sign in…</string>
@@ -62,4 +62,6 @@
     <string name="settings">Settings:</string>
     <string name="allow_schedule_access_without_signin">Allow schedule access without signin</string>
     <string name="you_have_no_notifications">You have no notifications!</string>
+    <string name="email_or_username">Email or Username:</string>
+    <string name="username">Username:</string>
 </resources>

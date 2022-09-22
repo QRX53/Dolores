@@ -1,15 +1,9 @@
 package com.example.dolores;
 
 import android.os.Bundle;
-import android.view.DragEvent;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -17,7 +11,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.dolores.bosque.Data;
+import com.example.dolores.bosque.data.Data;
 import com.example.dolores.databinding.ActivityMainBinding;
 import com.google.android.material.snackbar.Snackbar;
 

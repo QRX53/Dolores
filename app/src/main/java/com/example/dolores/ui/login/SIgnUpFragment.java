@@ -2,7 +2,6 @@ package com.example.dolores.ui.login;
 
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.InputFilter;
 import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -24,9 +23,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.dolores.R;
-import com.example.dolores.SecondFragment;
-import com.example.dolores.bosque.Data;
-import com.example.dolores.bosque.Information;
+import com.example.dolores.bosque.data.Data;
 import com.example.dolores.databinding.FragmentSIgnUpBinding;
 
 public class SIgnUpFragment extends Fragment {

@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.dolores.bosque.Data;
+import com.example.dolores.bosque.data.Data;
 import com.example.dolores.databinding.FragmentSecondBinding;
 
 public class SecondFragment extends Fragment implements View.OnClickListener {

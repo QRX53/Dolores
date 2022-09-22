@@ -1,16 +1,30 @@
-package com.example.dolores.bosque;
+package com.example.dolores.bosque.data;
 
+import org.yaml.snakeyaml.Yaml;
+
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Data {
 
     public static List<User> users = new ArrayList<>();
-
+    public static Yaml yaml = new Yaml();
     static {
-        users.add(new User("bigballs", "1629", "harryharbuck", "harry.harbuck-marlowe@bosquestudents.org"));
-        users.add(new User("bigblackballs", "1610", "miles.bellmore@bosquestudents.org", "miles.bellmore@bosquestudents.org"));
+        InputStream inputStream = Data.class
+                .getClassLoader()
+                .getResourceAsStream("customer.yaml");
+        Map<String, Object> obj = (Map<String, Object>) yaml.load(inputStream);
+
+
+
     }
+
+//    static {
+//        users.add(new User("bigballs", "1629", "harryharbuck", "harry.harbuck-marlowe@bosquestudents.org"));
+//        users.add(new User("bigblackballs", "1610", "miles.bellmore@bosquestudents.org", "miles.bellmore@bosquestudents.org"));
+//    }
 
     public static boolean getNewNotifs() {
         return false;
