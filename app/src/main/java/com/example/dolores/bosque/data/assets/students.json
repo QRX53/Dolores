@@ -1,0 +1,11 @@
+{
+  "id": 1629,
+  "username": "harryharbuck",
+  "email": "harry.harbuck-marlowe@bosquestudents.org",
+  "password": "password",
+  "grades":{
+    "class1": "100%",
+    "class2": "99%",
+    "class3": "98%"
+  }
+}

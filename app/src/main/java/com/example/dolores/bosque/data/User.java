@@ -6,6 +6,7 @@ public class User {
     private String id;
     private String username;
     private String email;
+    private Grades grades;
 
     public User() {}
 
@@ -39,5 +40,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Grades getGrades() {
+        return grades;
+    }
+
+    public void setGrades(Grades grades) {
+        this.grades = grades;
     }
 }

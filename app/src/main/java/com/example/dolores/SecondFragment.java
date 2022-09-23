@@ -1,12 +1,14 @@
 package com.example.dolores;
 
 import android.annotation.SuppressLint;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
@@ -33,6 +35,7 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
         super.onViewCreated(view, savedInstanceState);
 
         String day = String.valueOf(binding.calendarView.getDate());
+        System.out.println("\n\n" + day + "\n\n");
 
         this.binding.textView3.setText("Today's lunch is: " + Data.getLunch(day));
 

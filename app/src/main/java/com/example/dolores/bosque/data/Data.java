@@ -1,8 +1,20 @@
 package com.example.dolores.bosque.data;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+
 import org.yaml.snakeyaml.Yaml;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.StringWriter;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -10,21 +22,30 @@ import java.util.Map;
 public class Data {
 
     public static List<User> users = new ArrayList<>();
-    public static Yaml yaml = new Yaml();
-    static {
-        InputStream inputStream = Data.class
-                .getClassLoader()
-                .getResourceAsStream("customer.yaml");
-        Map<String, Object> obj = (Map<String, Object>) yaml.load(inputStream);
 
+    public static void json() throws IOException, URISyntaxException {
+        //read json file data to String
+        byte[] jsonData = new byte[0];
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            jsonData = Files.readAllBytes(Paths.get(Data.class.getResource("/assets/students.json").toURI()));
+        }
 
+        //create ObjectMapper instance
+        ObjectMapper objectMapper = new ObjectMapper();
 
+        //convert json string to object
+        User emp = objectMapper.readValue(jsonData, User.class);
+
+        System.out.println("\n\n\n\n\n" + emp + "\n\n\n\n\n");
     }
 
-//    static {
-//        users.add(new User("bigballs", "1629", "harryharbuck", "harry.harbuck-marlowe@bosquestudents.org"));
-//        users.add(new User("bigblackballs", "1610", "miles.bellmore@bosquestudents.org", "miles.bellmore@bosquestudents.org"));
-//    }
+    static {
+        try {
+            json();
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static boolean getNewNotifs() {
         return false;
