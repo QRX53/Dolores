@@ -155,6 +155,16 @@ public class LoginFragment extends Fragment {
         jsonObject.put("email", usermail);
         jsonObject.put("username", username);
 
+//        HttpClient httpClient = HttpClientBuilder.create().build();
+//        try {
+//            HttpPost request = new HttpPost("http://yoururl");
+//            StringEntity params = new StringEntity("details={\"name\":\"xyz\",\"age\":\"20\"} ");
+//            request.addHeader("content-type", "application/x-www-form-urlencoded");
+//            request.setEntity(params);
+//            HttpResponse response = httpClient.execute(request);
+//        } catch (Exception ex) {
+//        }
+
         String studentName = Information.studentIds.get(id);
 
         welcome = "Welcome to Dolores, " + studentName;
