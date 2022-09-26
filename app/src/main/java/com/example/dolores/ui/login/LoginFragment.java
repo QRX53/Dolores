@@ -25,6 +25,9 @@ import com.example.dolores.bosque.Information;
 import com.example.dolores.bosque.data.Data;
 import com.example.dolores.databinding.FragmentLoginBinding;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class LoginFragment extends Fragment {
 
     private LoginViewModel loginViewModel;
@@ -79,7 +82,11 @@ public class LoginFragment extends Fragment {
                     showLoginFailed(loginResult.getError());
                 }
                 if (loginResult.getSuccess() != null) {
-                    updateUiWithUser(loginResult.getSuccess());
+                    try {
+                        updateUiWithUser(loginResult.getSuccess());
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         });
@@ -125,7 +132,7 @@ public class LoginFragment extends Fragment {
         });
     }
 
-    private void updateUiWithUser(LoggedInUserView model) {
+    private void updateUiWithUser(LoggedInUserView model) throws JSONException {
 
         if (binding.editStudentId.getText().toString().length() < 4) {
             if (getContext() != null && getContext().getApplicationContext() != null) {
@@ -142,7 +149,11 @@ public class LoginFragment extends Fragment {
         String usermail = binding.username.getText().toString();
         String username = binding.usernameInputField.getText().toString();
 
-
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("id", id);
+        jsonObject.put("password", password);
+        jsonObject.put("email", usermail);
+        jsonObject.put("username", username);
 
         String studentName = Information.studentIds.get(id);
 
