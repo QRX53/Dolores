@@ -27,7 +27,7 @@ public class Data {
         //read json file data to String
         byte[] jsonData = new byte[0];
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            jsonData = Files.readAllBytes(Paths.get(Data.class.getResource("/assets/students.json").toURI()));
+            jsonData = Files.readAllBytes(Paths.get(Data.class.getResource("com/example/dolores/bosque/data/assets/students.json").toURI()));
         }
 
         //create ObjectMapper instance
