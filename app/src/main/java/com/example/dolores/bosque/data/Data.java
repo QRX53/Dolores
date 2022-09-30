@@ -22,6 +22,7 @@ import java.util.Map;
 public class Data {
 
     public static List<User> users = new ArrayList<>();
+    public static User current = null;
 
     public static void json() throws IOException, URISyntaxException {
         //read json file data to String
@@ -40,11 +41,15 @@ public class Data {
     }
 
     static {
-        try {
-            json();
-        } catch (IOException | URISyntaxException e) {
-            e.printStackTrace();
-        }
+        users.add(new User("password", "1629", "harryharbuck", "hhm@gmail.com", new Grades(
+                "99%",
+                "99%",
+                "99%",
+                "99%",
+                "99%",
+                "99%",
+                "99%"
+        )));
     }
 
     public static boolean getNewNotifs() {
@@ -85,6 +90,22 @@ public class Data {
             }
         }
         return false;
+    }
+
+    public static User getUser(String user, String password) {
+
+        // PLACEHOLDER CODE
+        // TODO:
+        // CHANGE THIS CODE LOL
+
+        for (User u : users) {
+            if (u.getUsername().matches(user)) {
+                if (u.getPassword().matches(password)) {
+                    return u;
+                }
+            }
+        }
+        return null;
     }
 
 }

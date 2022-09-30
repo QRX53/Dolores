@@ -14,6 +14,16 @@ public class Grades {
 
     }
 
+    public Grades(String class1, String class2, String class3, String class4, String class5, String class6, String class7) {
+        this.class1 = class1;
+        this.class2 = class2;
+        this.class3 = class3;
+        this.class4 = class4;
+        this.class5 = class5;
+        this.class6 = class6;
+        this.class7 = class7;
+    }
+
     public String getClass1() {
         return class1;
     }

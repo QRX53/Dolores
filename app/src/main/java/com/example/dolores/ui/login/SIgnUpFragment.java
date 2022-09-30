@@ -135,6 +135,7 @@ public class SIgnUpFragment extends Fragment {
         if (Data.verifyLogin(usermail, password)) {
             this.binding.login.setOnClickListener(view1 -> NavHostFragment.findNavController(SIgnUpFragment.this)
                     .navigate(R.id.action_SignUpFragment_to_StudentHubActivity));
+            Data.current = Data.getUser(usermail, password);
             return;
         } else {
             if (getContext() != null && getContext().getApplicationContext() != null) {

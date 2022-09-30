@@ -64,4 +64,6 @@
     <string name="you_have_no_notifications">You have no notifications!</string>
     <string name="email_or_username">Email or Username:</string>
     <string name="username">Username:</string>
+    <string name="nameplaceholer">nameplaceholer</string>
+    <string name="studentidplaceholder">studentidplaceholder</string>
 </resources>
