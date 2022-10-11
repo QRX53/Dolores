@@ -20,7 +20,9 @@ import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.dolores.R;
 import com.example.dolores.bosque.Information;
 import com.example.dolores.bosque.data.Data;
 import com.example.dolores.databinding.FragmentLoginBinding;
@@ -146,24 +148,14 @@ public class LoginFragment extends Fragment {
         String welcome;
         String id = binding.editStudentId.getText().toString();
         String password = binding.password.getText().toString();
-        String usermail = binding.username.getText().toString();
+        String gmail = binding.username.getText().toString();
         String username = binding.usernameInputField.getText().toString();
 
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.put("id", id);
-        jsonObject.put("password", password);
-        jsonObject.put("email", usermail);
-        jsonObject.put("username", username);
-
-//        HttpClient httpClient = HttpClientBuilder.create().build();
-//        try {
-//            HttpPost request = new HttpPost("http://yoururl");
-//            StringEntity params = new StringEntity("details={\"name\":\"xyz\",\"age\":\"20\"} ");
-//            request.addHeader("content-type", "application/x-www-form-urlencoded");
-//            request.setEntity(params);
-//            HttpResponse response = httpClient.execute(request);
-//        } catch (Exception ex) {
-//        }
+        if (getContext() != null && getContext().getApplicationContext() != null && Data.getUser(username, password) != null) {
+            Toast.makeText(getContext().getApplicationContext(), "This username and password already exist, please login!", Toast.LENGTH_LONG).show();
+            this.binding.login.setOnClickListener(view1 -> NavHostFragment.findNavController(LoginFragment.this)
+                    .navigate(R.id.action_LoginFragment_to_SignUpFragment));
+        }
 
         String studentName = Information.studentIds.get(id);
 

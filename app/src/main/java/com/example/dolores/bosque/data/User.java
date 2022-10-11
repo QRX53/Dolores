@@ -7,6 +7,7 @@ public class User {
     private String username;
     private String email;
     private Grades grades;
+    public String tutoring;
 
     public User() {}
 
@@ -16,6 +17,7 @@ public class User {
         this.username = username;
         this.email = email;
         this.grades = grades;
+        this.tutoring = "No";
     }
 
     public String getPassword() {
@@ -44,6 +46,10 @@ public class User {
 
     public String getEmail() {
         return email;
+    }
+
+    public void setTutoring() {
+        this.tutoring = "Yes";
     }
 
     public void setEmail(String email) {

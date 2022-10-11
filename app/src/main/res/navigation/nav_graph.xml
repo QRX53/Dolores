@@ -48,6 +48,9 @@
         <action
             android:id="@+id/action_LoginFragment_to_StudentHubActivity"
             app:destination="@id/StudentHubActivity" />
+        <action
+            android:id="@+id/action_LoginFragment_to_SignUpFragment"
+            app:destination="@id/SignUpFragment" />
     </fragment>
 
     <fragment

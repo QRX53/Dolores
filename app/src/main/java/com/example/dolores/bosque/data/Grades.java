@@ -9,12 +9,13 @@ public class Grades {
     private String class5;
     private String class6;
     private String class7;
+    private String gpa;
 
     public Grades() {
 
     }
 
-    public Grades(String class1, String class2, String class3, String class4, String class5, String class6, String class7) {
+    public Grades(String class1, String class2, String class3, String class4, String class5, String class6, String class7, String gpa) {
         this.class1 = class1;
         this.class2 = class2;
         this.class3 = class3;
@@ -22,10 +23,19 @@ public class Grades {
         this.class5 = class5;
         this.class6 = class6;
         this.class7 = class7;
+        this.gpa = gpa;
     }
 
     public String getClass1() {
         return class1;
+    }
+
+    public String getGpa() {
+        return gpa;
+    }
+
+    public void setGpa(String gpa) {
+        this.gpa = gpa;
     }
 
     public void setClass1(String class1) {

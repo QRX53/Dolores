@@ -23,6 +23,8 @@ public class Data {
 
     public static List<User> users = new ArrayList<>();
     public static User current = null;
+    public static boolean gpa = false;
+    public static boolean tutoring = false;
 
     public static void json() throws IOException, URISyntaxException {
         //read json file data to String
@@ -48,7 +50,8 @@ public class Data {
                 "99%",
                 "99%",
                 "99%",
-                "99%"
+                "99%",
+                "4.0"
         )));
     }
 
