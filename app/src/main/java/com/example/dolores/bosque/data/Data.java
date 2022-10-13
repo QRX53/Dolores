@@ -44,14 +44,21 @@ public class Data {
 
     static {
         users.add(new User("password", "1629", "harryharbuck", "hhm@gmail.com", new Grades(
-                "99%",
-                "99%",
-                "99%",
-                "99%",
-                "99%",
-                "99%",
-                "99%",
-                "4.0"
+                "Latin 4",
+                "Anatomy and Physiology",
+                "Humanities Capstone",
+                "Foundations 2",
+                "English 12",
+                "Critical approaches",
+                "College Seminar",
+                "4.0",
+                "100%",
+                "92%",
+                "90%",
+                "100%",
+                "100%",
+                "95%",
+                "100%"
         )));
     }
 

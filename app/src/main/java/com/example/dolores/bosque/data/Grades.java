@@ -10,12 +10,19 @@ public class Grades {
     private String class6;
     private String class7;
     private String gpa;
+    private String class1grade;
+    private String class2grade;
+    private String class3grade;
+    private String class4grade;
+    private String class5grade;
+    private String class6grade;
+    private String class7grade;
 
     public Grades() {
 
     }
 
-    public Grades(String class1, String class2, String class3, String class4, String class5, String class6, String class7, String gpa) {
+    public Grades(String class1, String class2, String class3, String class4, String class5, String class6, String class7, String gpa, String class1grade, String class2grade, String class3grade, String class4grade, String class5grade, String class6grade, String class7grade) {
         this.class1 = class1;
         this.class2 = class2;
         this.class3 = class3;
@@ -24,6 +31,13 @@ public class Grades {
         this.class6 = class6;
         this.class7 = class7;
         this.gpa = gpa;
+        this.class1grade = class1grade;
+        this.class2grade = class2grade;
+        this.class3grade = class3grade;
+        this.class4grade = class4grade;
+        this.class5grade = class5grade;
+        this.class6grade = class6grade;
+        this.class7grade = class7grade;
     }
 
     public String getClass1() {
@@ -44,6 +58,62 @@ public class Grades {
 
     public String getClass2() {
         return class2;
+    }
+
+    public String getClass1grade() {
+        return class1grade;
+    }
+
+    public void setClass1grade(String class1grade) {
+        this.class1grade = class1grade;
+    }
+
+    public String getClass2grade() {
+        return class2grade;
+    }
+
+    public void setClass2grade(String class2grade) {
+        this.class2grade = class2grade;
+    }
+
+    public String getClass3grade() {
+        return class3grade;
+    }
+
+    public void setClass3grade(String class3grade) {
+        this.class3grade = class3grade;
+    }
+
+    public String getClass4grade() {
+        return class4grade;
+    }
+
+    public void setClass4grade(String class4grade) {
+        this.class4grade = class4grade;
+    }
+
+    public String getClass5grade() {
+        return class5grade;
+    }
+
+    public void setClass5grade(String class5grade) {
+        this.class5grade = class5grade;
+    }
+
+    public String getClass6grade() {
+        return class6grade;
+    }
+
+    public void setClass6grade(String class6grade) {
+        this.class6grade = class6grade;
+    }
+
+    public String getClass7grade() {
+        return class7grade;
+    }
+
+    public void setClass7grade(String class7grade) {
+        this.class7grade = class7grade;
     }
 
     public void setClass2(String class2) {
