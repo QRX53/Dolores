@@ -7,58 +7,16 @@
     tools:context=".ui.dashboard.DashboardFragment">
 
     <TextView
-        android:id="@+id/class7"
-        android:layout_width="127dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="51dp"
-        android:text="TextView"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
-        app:layout_constraintStart_toEndOf="@+id/gpaseperator"
-        app:layout_constraintTop_toBottomOf="@+id/class5" />
-
-    <TextView
-        android:id="@+id/classPercentage7"
-        android:layout_width="130dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="2dp"
-        android:text="TextView"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/classPercentage6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/classPercentage5" />
-
-    <TextView
-        android:id="@+id/classPercentage6"
-        android:layout_width="130dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="47dp"
-        android:text="TextView"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/classPercentage7" />
-
-    <TextView
         android:id="@+id/classPercentage5"
         android:layout_width="130dp"
         android:layout_height="33dp"
-        android:layout_marginTop="2dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="22dp"
         android:text="TextView"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/classPercentage7"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/classPercentage4" />
 
@@ -66,13 +24,14 @@
         android:id="@+id/classPercentage3"
         android:layout_width="130dp"
         android:layout_height="33dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginBottom="21dp"
         android:text="TextView"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/classPercentage4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/classPercentage2" />
 
@@ -80,9 +39,9 @@
         android:id="@+id/classPercentage4"
         android:layout_width="130dp"
         android:layout_height="33dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="3dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="2dp"
         android:text="TextView"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/classPercentage5"
@@ -94,13 +53,14 @@
         android:id="@+id/classPercentage2"
         android:layout_width="130dp"
         android:layout_height="33dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="25dp"
         android:text="TextView"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/classPercentage3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/classPercentage1" />
 
@@ -109,9 +69,9 @@
         android:layout_width="129dp"
         android:layout_height="34dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="21dp"
         android:layout_marginEnd="2dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="24dp"
         android:text="TextView"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/class4"
@@ -120,30 +80,18 @@
         app:layout_constraintTop_toBottomOf="@+id/class3" />
 
     <TextView
-        android:id="@+id/class5"
-        android:layout_width="127dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="17dp"
-        android:text="TextView"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/class7"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
-        app:layout_constraintStart_toEndOf="@+id/gpaseperator"
-        app:layout_constraintTop_toBottomOf="@+id/class4" />
-
-    <TextView
         android:id="@+id/class4"
         android:layout_width="127dp"
-        android:layout_height="29dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="4dp"
         android:text="TextView"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/class5"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/gpaseperator"
         app:layout_constraintTop_toBottomOf="@+id/class6" />
 
@@ -151,14 +99,15 @@
         android:id="@+id/class3"
         android:layout_width="128dp"
         android:layout_height="32dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="21dp"
         android:text="TextView"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/class6"
         app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/gpaseperator"
         app:layout_constraintTop_toBottomOf="@+id/class2" />
 
@@ -166,9 +115,10 @@
         android:id="@+id/class2"
         android:layout_width="126dp"
         android:layout_height="29dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="29dp"
         android:text="TextView"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/class3"
@@ -176,46 +126,34 @@
         app:layout_constraintStart_toEndOf="@+id/gpaseperator"
         app:layout_constraintTop_toBottomOf="@+id/class1" />
 
-    <Space
-        android:id="@+id/space"
-        android:layout_width="389dp"
-        android:layout_height="14dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginBottom="532dp"
-        android:background="#2196F3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <TextView
         android:id="@+id/studentidplaceholder"
         android:layout_width="197dp"
         android:layout_height="36dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="637dp"
         android:text="@string/studentidplaceholder"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/studentName"
-        android:layout_width="192dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="17dp"
+        android:layout_width="211dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="42dp"
         android:layout_marginBottom="585dp"
         android:text="studentnameplaceholder"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/studentidplaceholder"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.311" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -224,7 +162,6 @@
         android:layout_marginStart="56dp"
         android:layout_marginEnd="37dp"
         android:background="@drawable/ic_home_black_24dp"
-        app:layout_constraintBottom_toTopOf="@+id/space"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/studentidplaceholder"
@@ -235,70 +172,68 @@
         android:layout_width="75dp"
         android:layout_height="41dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="29dp"
         android:layout_marginEnd="17dp"
-        android:layout_marginBottom="474dp"
+        android:layout_marginBottom="504dp"
         android:text="GPA"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/space" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="26dp"
         android:layout_marginEnd="183dp"
-        android:layout_marginBottom="469dp"
+        android:layout_marginBottom="500dp"
         android:text="Show GPA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/gpabox"
-        app:layout_constraintTop_toBottomOf="@+id/space" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/gpaseperator"
         android:layout_width="8dp"
         android:layout_height="526dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="6dp"
         android:layout_marginEnd="19dp"
         android:background="#000000"
         android:src="@android:drawable/screen_background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toEndOf="@+id/gpabox"
-        app:layout_constraintTop_toBottomOf="@+id/space" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tutoringText"
-        android:layout_width="91dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="15dp"
+        android:layout_width="87dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="9dp"
         android:layout_marginBottom="436dp"
         android:text="Tutoring"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/gpaseperator"
+        app:layout_constraintEnd_toStartOf="@+id/tutoringButton"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gpabox" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="391dp"
-        android:layout_height="7dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="6dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="48dp"
         android:src="@android:drawable/screen_background_dark"
         app:layout_constraintBottom_toTopOf="@+id/gpaseperator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/space" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/tutoringButton"
@@ -311,8 +246,10 @@
         android:text="SHOW"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toEndOf="@+id/gpaseperator"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.172" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -323,8 +260,10 @@
         android:src="@android:drawable/screen_background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/gpaseperator"
-        app:layout_constraintTop_toBottomOf="@+id/tutoringButton" />
+        app:layout_constraintTop_toBottomOf="@+id/tutoringButton"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -345,7 +284,6 @@
         android:layout_marginTop="2dp"
         android:src="@android:drawable/screen_background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/classPercentage7"
         app:layout_constraintStart_toEndOf="@+id/class6"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
@@ -353,8 +291,10 @@
         android:id="@+id/textView2"
         android:layout_width="88dp"
         android:layout_height="36dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="3dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="8dp"
         android:text="Class:"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
@@ -368,9 +308,11 @@
         android:layout_height="37dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="3dp"
+        android:layout_marginEnd="29dp"
         android:text="Percentage:"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
@@ -378,27 +320,38 @@
         android:id="@+id/class1"
         android:layout_width="127dp"
         android:layout_height="29dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="17dp"
         android:text="TextView"
         android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/class2"
         app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/gpaseperator"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/classPercentage1"
         android:layout_width="130dp"
         android:layout_height="33dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="302dp"
+        android:layout_marginBottom="41dp"
         android:text="TextView"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/classPercentage2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="122dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

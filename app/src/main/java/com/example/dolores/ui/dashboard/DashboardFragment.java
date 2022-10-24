@@ -64,33 +64,26 @@ public class DashboardFragment extends Fragment {
         final TextView class2 = binding.class2;
         final TextView class3 = binding.class3;
         final TextView class4 = binding.class4;
-        final TextView class5 = binding.class5;
         final TextView class6 = binding.class6;
-        final TextView class7 = binding.class7;
 
         final TextView classPercentage1 = binding.classPercentage1;
         final TextView classPercentage2 = binding.classPercentage2;
         final TextView classPercentage3 = binding.classPercentage3;
         final TextView classPercentage4 = binding.classPercentage4;
         final TextView classPercentage5 = binding.classPercentage5;
-        final TextView classPercentage6 = binding.classPercentage6;
-        final TextView classPercentage7 = binding.classPercentage7;
+
 
         class1.setText(Data.current.getGrades().getClass1());
         class2.setText(Data.current.getGrades().getClass2());
         class3.setText(Data.current.getGrades().getClass3());
         class4.setText(Data.current.getGrades().getClass4());
-        class5.setText(Data.current.getGrades().getClass5());
         class6.setText(Data.current.getGrades().getClass6());
-        class7.setText(Data.current.getGrades().getClass7());
 
         classPercentage1.setText(Data.current.getGrades().getClass1grade());
         classPercentage2.setText(Data.current.getGrades().getClass2grade());
         classPercentage3.setText(Data.current.getGrades().getClass3grade());
         classPercentage4.setText(Data.current.getGrades().getClass4grade());
         classPercentage5.setText(Data.current.getGrades().getClass5grade());
-        classPercentage6.setText(Data.current.getGrades().getClass6grade());
-        classPercentage7.setText(Data.current.getGrades().getClass7grade());
 
         return root;
     }
